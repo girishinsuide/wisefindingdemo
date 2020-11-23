@@ -1,0 +1,54 @@
+
+main {
+  position: relative;
+  height: 100vh;
+}
+main .helper {
+  background: rgba(0, 0, 0, 0.2);
+  
+}
+#map{height: 100vh}
+.sidebar {
+  background: #fff;
+  height: 100vh;
+  width: 240px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  outline: none;
+}
+.sidebar .avatar {
+  background: #2E3092;
+  padding: 2em 0.5em;
+  text-align: center; color: #fff;
+}
+.sidebar .avatar img {
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #ffea92;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+}
+.sidebar .avatar h2 {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0.5em 0;
+  margin: 0;
+}
+.sidebar ul li {
+  padding: 0.5em 1em 0.5em 3em;
+  font-size: 0.95em;
+  font-weight: regular;
+  background-repeat: no-repeat;
+  background-position: left 15px center;
+  background-size: auto 20px;
+  transition: all 0.15s linear;
+  cursor: pointer;
+}
+#instructions{background: #E7D4A7; padding: 10px}
+
+
