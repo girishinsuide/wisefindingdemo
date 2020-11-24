@@ -7,7 +7,7 @@ import mapboxgl from 'mapbox-gl';
   styleUrls: ['./demo.component.css']
 })
 export class DemoComponent implements OnInit {
-myAccessToken = 'pk.eyJ1IjoiZ2lyaXNoaGFsZGFua2FyIiwiYSI6ImNqcjZmb2FpZjAwZmM0M293NWlucTBzeWYifQ.jSU1AAhs6TZrsO4gfzTE9w';
+myAccessToken = 'pk.eyJ1IjoibWVycmlsbGdvbnNhbHZlcyIsImEiOiJjajN6ampkbzcwM3VxMzJyemR5Y2dqdTZuIn0.EGosEkXFJM5K_82Vy0XuCA';
 map:any;
   constructor() { }
 
@@ -16,20 +16,21 @@ map:any;
 }
 
 initMap(){
-	mapboxgl.accessToken = 'pk.eyJ1IjoiZXhhbXBsZXMiLCJhIjoiY2p0MG01MXRqMW45cjQzb2R6b2ptc3J4MSJ9.zA2W0IkI0c6KaAhJfk9bWg';
+	mapboxgl.accessToken = 'pk.eyJ1IjoibWVycmlsbGdvbnNhbHZlcyIsImEiOiJjajN6ampkbzcwM3VxMzJyemR5Y2dqdTZuIn0.EGosEkXFJM5K_82Vy0XuCA';
       var map = new mapboxgl.Map({
         container: 'map', // container id
-        style: 'mapbox://styles/mapbox/streets-v11', //stylesheet location
-        center: [-122.662323, 45.523751], // starting position
+        style: 'mapbox://styles/merrillgonsalves/ck42go29w08qv1cqpxv9ukbox', //stylesheet location
+        center: [35.987033147636225,31.722444437784787], // starting position
+        // center: [31.722276,35.986895], // starting position
         zoom: 12 // starting zoom
       });
 
       // set the bounds of the map
-      var bounds = [
-        [-123.069003, 45.395273],
-        [-122.303707, 45.612333]
-      ];
-      map.setMaxBounds(bounds);
+      // var bounds = [
+      //   [-123.069003, 45.395273],
+      //   [-122.303707, 45.612333]
+      // ];
+      // map.setMaxBounds(bounds);
 
       // initialize the map canvas to interact with later
       var canvas = map.getCanvasContainer();
