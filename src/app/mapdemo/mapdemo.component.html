@@ -4,6 +4,12 @@
   <header class="avatar">
 		<img src="banner.jpg" />
     <h2>Welcome to Al Hamra Mall Riyadh</h2>
+    <div class="search">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+      <input type="text" class="searchTerm" placeholder="Search for places,  restaurant, shop name... ">      
+   </div>
   </header>
 	<ul>
     <li *ngFor="let poi of poiList;let indexOfelement=index;"><span>{{poi.poiTitle}}</span></li>

@@ -30,9 +30,11 @@ maxRadius = 18;
 		  })
 		 this.map.addControl(new mapboxgl.NavigationControl());
 		}
-	 	placeMarker(lat,lng){
+	 	placeMarker(lat,lng,className=""){
 	 	//because in pois they provide mapbox style lat lng that's why no need to revers lng and lat
-	 		var marker = new mapboxgl.Marker()
+	 	var el = document.createElement('div');
+        el.className = className;
+	 		var marker = new mapboxgl.Marker(el)
 	 					.setLngLat([lat,lng])
 	 					.addTo(this.map)
 	 	}

@@ -1,2 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 body{margin: 0}
+
+.mapboxgl-marker{background: url(/assets/toilet.svg); width: 30px; height: 30px; background-size: cover;}
+.atm{background: url(/assets/atm.svg); background-size: cover;}
+.food{background: url(/assets/food.svg);background-size: cover;}
+.play{background: url(/assets/play.svg);background-size: cover;}
+.shop{background: url(/assets/shop.svg);background-size: cover;}
+.toilet{background: url(/assets/toilet.svg);background-size: cover;}

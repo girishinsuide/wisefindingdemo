@@ -21,7 +21,7 @@ main .helper {
 .sidebar {
   background: #fff;
   height: 100vh;
-  width: 240px;
+  width: 410px;
   position: fixed;
   top: 0;
   left: 0;
@@ -30,8 +30,7 @@ main .helper {
 }
 .sidebar .avatar {
   background: #2E3092;
-  padding: 2em 0.5em;
-  text-align: center; color: #fff;
+  padding: 2em 0.5em; color: #fff;
 }
 .sidebar .avatar img {
   width: 100px;
@@ -60,5 +59,36 @@ main .helper {
   cursor: pointer;
 }
 #instructions{background: #E7D4A7; padding: 10px}
+
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex; margin: 10px 0
+}
+
+.searchTerm {
+  width: 100%;
+  padding: 5px 5px 5px 50px;
+  height: 32px;
+  border-radius: 25px; border: none;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {position: absolute; left: 0;
+  width: 42px;
+  height:42px;
+  background: #C9A115;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%; border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
 
 
